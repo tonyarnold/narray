@@ -16,7 +16,7 @@ GEMSPEC = Gem::Specification.new do |s|
   s.date = Time.now.strftime("%F")
   s.description = "Numerical N-dimensional Array class"
   s.email = "masa16.tanaka@gmail.com"
-  s.extensions = ["src/extconf.rb"]
+  s.extensions = ["extconf.rb"]
   s.files = %w[
 ChangeLog
 MANIFEST
@@ -24,30 +24,30 @@ README.en
 README.ja
 SPEC.en
 SPEC.ja
-src/depend
-src/extconf.rb
-src/mkmath.rb
-src/mknafunc.rb
-src/mkop.rb
-src/na_array.c
-src/na_func.c
-src/na_index.c
-src/na_linalg.c
-src/na_random.c
-src/narray.c
-src/narray.def
-src/narray.h
-src/narray_local.h
-src/lib/narray_ext.rb
-src/lib/nmatrix.rb
+depend
+extconf.rb
+mkmath.rb
+mknafunc.rb
+mkop.rb
+na_array.c
+na_func.c
+na_index.c
+na_linalg.c
+na_random.c
+narray.c
+narray.def
+narray.h
+narray_local.h
+lib/narray_ext.rb
+lib/nmatrix.rb
 ]
   s.rdoc_options = %w[
     --title NArray
     --main NArray
     --exclude mk.*
     --exclude extconf\.rb
-    --exclude src/.*\.h
-    --exclude src/lib/
+    --exclude .*\.h
+    --exclude lib/
     --exclude .*\.o
     --exclude narray\.so
     --exclude libnarray\.*
