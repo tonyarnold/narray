@@ -1,4 +1,4 @@
-open("src/narray.h") do |f|
+open("narray.h") do |f|
   f.each_line do |l|
     if /NARRAY_VERSION "([\d.]+)"/ =~ l
       NARRAY_VERSION = $1
